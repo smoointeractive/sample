@@ -4,12 +4,10 @@ namespace CodeSample.iOS
 	public class CodeSampleIocContainer
 	{
 		NetworkRequestService networkRequestService;
-		//CodeSampleTableViewDataSource codeSampleTableDataSource;
 
 		public CodeSampleIocContainer()
 		{
 			networkRequestService = new NetworkRequestService();
-			//codeSampleTableDataSource = new CodeSampleTableViewDataSource(networkRequestService);
 		}
 
 		public CodeSampleTableViewDataSource GetViewControllerDataSource(SampleMovieListing data)

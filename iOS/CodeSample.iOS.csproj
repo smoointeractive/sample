@@ -104,7 +104,6 @@
     <Folder Include="Resources\" />
     <Folder Include="Services\" />
     <Folder Include="ViewController\" />
-    <Folder Include="View\" />
     <Folder Include="IoCContainer\" />
   </ItemGroup>
   <ItemGroup>
@@ -121,9 +120,9 @@
     <Compile Include="ViewController\ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Main.cs" />
     <Compile Include="Services\CodeSampleTableViewDataSource.cs" />
     <Compile Include="IoCContainer\CodeSampleIocContainer.cs" />
+    <Compile Include="Main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

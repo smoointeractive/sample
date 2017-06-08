@@ -26,8 +26,6 @@ namespace CodeSample.iOS
 			};
 
 			var appDelegate = (AppDelegate)UIApplication.SharedApplication.Delegate;
-			//SampleDataTableView.Source = appDelegate.iocContainer.GetViewControllerDataSource("https://facebook.github.io/react-native/movies.json");
-
 			var awaiter = appDelegate.iocContainer.GetNetwprkRequestService().
 			                         GetData("https://facebook.github.io/react-native/movies.json").
 			                         GetAwaiter();
@@ -38,13 +36,6 @@ namespace CodeSample.iOS
 				SampleDataTableView.Source = dataSource;
 				SampleDataTableView.ReloadData();
 			});
-
-			//networkService = new NetworkRequestService();
-			//var data = networkService.GetData("https://facebook.github.io/react-native/movies.json").GetAwaiter();
-			//data.OnCompleted(() => {
-			//	var result = data.GetResult();
-			//	System.Diagnostics.Debug.WriteLine("title: " + result.Description);
-			//});
 		}
 
 		public override void DidReceiveMemoryWarning()
